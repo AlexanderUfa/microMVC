@@ -1,7 +1,13 @@
 <?php
 
-spl_autoload_register(function ($name)
+
+//string(15) "Main_Controller"
+
+spl_autoload_register( function ( $name )
 {
-    var_dump($name);
-    exit;
+    $dir = explode( '_' , $name );
+    
+    //var_dump($dir);
+    require_once MODDIR . DS . $dir[0] . DS . $name . '.php' ;
+    
 }); 
