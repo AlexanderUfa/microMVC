@@ -140,6 +140,7 @@
 	{
                 
                 $path = MODDIR . DS . $pathName . '.php' ; 
+
 		// Store the file path locally
 		$this->_file = $path;
 

@@ -1,4 +1,4 @@
-<?php abstract class MainPage_M
+<?php  class MainPage_M extends Main_M
 {
     
 }
